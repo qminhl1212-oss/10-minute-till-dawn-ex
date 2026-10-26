@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flamecannon-webgl-mod
+    runtime: static
+    buildCommand: "echo No build step required"
+    staticPublishPath: ./site
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-store

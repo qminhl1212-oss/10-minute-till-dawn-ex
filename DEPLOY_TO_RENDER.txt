@@ -1,0 +1,13 @@
+Render deployment notes
+
+This repository is ready to deploy as a Render Static Site. The render.yaml
+Blueprint publishes the site/ folder, which contains the browser game files.
+No Node/Python server is needed after deployment.
+
+To deploy:
+1. In Render, choose New > Blueprint and connect this GitHub repository.
+2. Review the flamecannon-webgl-mod Static Site, then deploy it.
+3. Open the site's onrender.com URL in Chrome.
+
+The game files remain together in site/ so UnityLoader can load the JSON, data,
+and WebAssembly files by their relative paths.
